@@ -19,7 +19,7 @@ module.exports = () => {
         template: './index.html',
         title: 'J.A.T.E'
       }),
-      !process.argv.includes('--watch') && new InjectManifest({
+      new InjectManifest({
         swSrc: '../client/src-sw.js',
         swDest: 'service-worker.js',
       }),
@@ -41,7 +41,7 @@ module.exports = () => {
           },
         ],
       }),
-    ].filter(Boolean),
+    ],
 
     module: {
       rules: [
