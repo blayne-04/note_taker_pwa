@@ -20,7 +20,7 @@ module.exports = () => {
         title: 'J.A.T.E'
       }),
       new InjectManifest({
-        swSrc: '../client/src-sw.js',
+        swSrc: './src-sw.js',
         swDest: 'service-worker.js',
       }),
       new WebpackPwaManifest({
